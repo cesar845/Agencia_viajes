@@ -8,6 +8,7 @@ def fnt_limpiar():
     print('Universidad Catolica Luis Amigo\n')
 
 def fnt_agente(op):
+    global sw
     fnt_limpiar()
     if op == '1':
         print(' >>> Agregar viajero <<< ')
@@ -33,6 +34,8 @@ def fnt_agente(op):
             for i in range(len(list_viajeros)):
                 print(list_viajeros[i])
             input('Presione <ENTER> para continuar...')
+    elif op == '3':
+        sw = False
 
 while sw == True:
     fnt_limpiar()
